@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Photo View Controller-->
         <scene sceneID="Hfg-5S-eDw">
             <objects>
-                <viewController id="WdN-L8-FdD" sceneMemberID="viewController">
+                <viewController id="WdN-L8-FdD" customClass="PhotoViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Exr-OA-o3O"/>
                         <viewControllerLayoutGuide type="bottom" id="mk7-0D-gzk"/>
@@ -18,16 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Wvc-Eg-Siu"/>
+                    <tabBarItem key="tabBarItem" title="" image="camera" id="Wvc-Eg-Siu">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h29-up-uZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="234" y="193"/>
         </scene>
-        <!--Item-->
+        <!--Friend Search View Controller-->
         <scene sceneID="bbV-ES-Y3L">
             <objects>
-                <viewController id="5RZ-k5-paM" sceneMemberID="viewController">
+                <viewController id="5RZ-k5-paM" customClass="FriendSearchViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aTd-E2-mXg"/>
                         <viewControllerLayoutGuide type="bottom" id="J8D-Pc-j8l"/>
@@ -37,16 +39,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="INi-xm-2pV"/>
+                    <tabBarItem key="tabBarItem" title="" image="people" id="INi-xm-2pV">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wh3-Pj-UyS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="250" y="859"/>
         </scene>
-        <!--Item 1-->
+        <!--Timeline View Controller-->
         <scene sceneID="gaX-7K-xfp">
             <objects>
-                <viewController id="4hy-eT-bra" sceneMemberID="viewController">
+                <viewController id="4hy-eT-bra" customClass="TimelineViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QSW-H4-aNI"/>
                         <viewControllerLayoutGuide type="bottom" id="UAf-IU-GCL"/>
@@ -56,7 +60,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="K9q-qr-pgK"/>
+                    <tabBarItem key="tabBarItem" title="" image="home" id="K9q-qr-pgK">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNz-T1-1z1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,4 +88,9 @@
             <point key="canvasLocation" x="-586" y="-137"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" width="40" height="30"/>
+        <image name="home" width="38" height="36"/>
+        <image name="people" width="42" height="42"/>
+    </resources>
 </document>
