@@ -44,6 +44,7 @@ class PhotoTakingHelper : NSObject {
         
         let photoLibraryAction = UIAlertAction(title: "Photo from Library", style: .Default) { (action) in
             self.showImagePickerController(.PhotoLibrary)
+            //called when the "photo library" pop-up button is clicked
         }
         
         alertController.addAction(photoLibraryAction)
@@ -51,6 +52,7 @@ class PhotoTakingHelper : NSObject {
         viewController.presentViewController(alertController, animated: true, completion: nil)
     }
     
+    //func below helps to create utility for the buttons in the alertController above
     func showImagePickerController(sourceType: UIImagePickerControllerSourceType) {
         imagePickerController = UIImagePickerController()
         imagePickerController!.sourceType = sourceType

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class TimelineViewController: UIViewController {
     
@@ -23,10 +24,17 @@ class TimelineViewController: UIViewController {
         //without a trailing closure, it will look like this ------>
         //PhotoTakingHelper(viewController: self.tabBarController!, callback: { (image: UIImage?) in
         
-        photoTakingHelper = PhotoTakingHelper(viewController: self.tabBarController!) { (image: UIImage?) in
-            // don't do anything, yet...
-            print("received a callback")
-        }
+        photoTakingHelper = PhotoTakingHelper(viewController: self.tabBarController!, callback: { (image: UIImage?) in
+            if let image = image {
+                let imageData = UIImageJPEGRepresentation(image, 0.8)!
+                let imageFile = PFFile(name: "image.jpg", data: imageData)!
+                
+                let post = PFObject(className: "Post")
+                post["imageFile"] = imageFile
+                post.saveInBackground()
+            }
+        })
+
     }
 }
 
