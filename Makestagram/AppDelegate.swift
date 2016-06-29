@@ -36,7 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         let acl = PFACL()
+        
+        //all users can read the data
         acl.publicReadAccess = true
+        
+        //only provide write access to the user that created the object
         PFACL.setDefaultACL(acl, withAccessForCurrentUser: true)
         
         return true

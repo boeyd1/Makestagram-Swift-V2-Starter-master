@@ -6,6 +6,8 @@
 //  Copyright © 2016 Make School. All rights reserved.
 //
 
+//created to prevent code redundancy
+
 import Foundation
 import Parse
 

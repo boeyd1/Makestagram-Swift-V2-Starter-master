@@ -38,6 +38,7 @@
 		FF26164C1D20FFF400AB2BDF /* FriendSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF26164B1D20FFF400AB2BDF /* FriendSearchViewController.swift */; };
 		FF2616551D21102100AB2BDF /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2616541D21102100AB2BDF /* PhotoTakingHelper.swift */; };
 		FF2616581D224AE200AB2BDF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2616571D224AE200AB2BDF /* Post.swift */; };
+		FF48EE991D2377B800E840DA /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF48EE981D2377B800E840DA /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		FF26164B1D20FFF400AB2BDF /* FriendSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchViewController.swift; sourceTree = "<group>"; };
 		FF2616541D21102100AB2BDF /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
 		FF2616571D224AE200AB2BDF /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FF48EE981D2377B800E840DA /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 		62C8C1E21B06BD6500DC3EA7 /* Makestagram */ = {
 			isa = PBXGroup;
 			children = (
+				FF48EE941D23775A00E840DA /* Views */,
 				FF2616561D224AD000AB2BDF /* Models */,
 				6277189C1B0A58E800AF5C6E /* Helpers */,
 				627718811B0A581600AF5C6E /* ViewControllers */,
@@ -283,6 +286,22 @@
 				FF2616571D224AE200AB2BDF /* Post.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FF48EE941D23775A00E840DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF48EE951D23775A00E840DA /* Timeline */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF48EE951D23775A00E840DA /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				FF48EE981D2377B800E840DA /* PostTableViewCell.swift */,
+			);
+			path = Timeline;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -504,6 +523,7 @@
 				FF26164A1D20FFCE00AB2BDF /* PhotoViewController.swift in Sources */,
 				62C8C1E61B06BD6500DC3EA7 /* AppDelegate.swift in Sources */,
 				627718971B0A581700AF5C6E /* FilterViewController.swift in Sources */,
+				FF48EE991D2377B800E840DA /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
