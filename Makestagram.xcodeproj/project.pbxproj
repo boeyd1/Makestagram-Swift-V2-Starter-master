@@ -39,6 +39,7 @@
 		FF2616551D21102100AB2BDF /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2616541D21102100AB2BDF /* PhotoTakingHelper.swift */; };
 		FF2616581D224AE200AB2BDF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2616571D224AE200AB2BDF /* Post.swift */; };
 		FF48EE991D2377B800E840DA /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF48EE981D2377B800E840DA /* PostTableViewCell.swift */; };
+		FF48EE9B1D2399D200E840DA /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF48EE9A1D2399D200E840DA /* ParseHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		FF2616541D21102100AB2BDF /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
 		FF2616571D224AE200AB2BDF /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		FF48EE981D2377B800E840DA /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		FF48EE9A1D2399D200E840DA /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 			children = (
 				6277189D1B0A58E800AF5C6E /* ErrorHandling.swift */,
 				6277189E1B0A58E800AF5C6E /* ParseLoginHelper.swift */,
+				FF48EE9A1D2399D200E840DA /* ParseHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 				FF26164A1D20FFCE00AB2BDF /* PhotoViewController.swift in Sources */,
 				62C8C1E61B06BD6500DC3EA7 /* AppDelegate.swift in Sources */,
 				627718971B0A581700AF5C6E /* FilterViewController.swift in Sources */,
+				FF48EE9B1D2399D200E840DA /* ParseHelper.swift in Sources */,
 				FF48EE991D2377B800E840DA /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
